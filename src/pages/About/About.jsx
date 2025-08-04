@@ -75,8 +75,8 @@ const About = () => {
                 <div className="philosophy-item">
                   <span className="philosophy-icon">🤝</span>
                   <div>
-                    <h4>Collaboration Over Competition</h4>
-                    <p>The best solutions emerge when brilliant minds work together.</p>
+                    <h4>Connection Over Competition</h4>
+                    <p>The best memories are formed when we make new friends. Spend time with them.</p>
                   </div>
                 </div>
               </div>
