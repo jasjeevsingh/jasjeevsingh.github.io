@@ -53,14 +53,6 @@ const Layout = ({ children }) => {
               </li>
               <li className="nav-item">
                 <Link 
-                  to="/contact" 
-                  className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link 
                   to="/blog" 
                   className={`nav-link ${isActive('/blog') ? 'active' : ''}`}
                 >
@@ -73,6 +65,14 @@ const Layout = ({ children }) => {
                   className={`nav-link ${isActive('/ideas') ? 'active' : ''}`}
                 >
                   Ideas
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link 
+                  to="/contact" 
+                  className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+                >
+                  Contact
                 </Link>
               </li>
             </ul>

@@ -60,6 +60,12 @@ const Home = () => {
                 <p>Explore my latest work and experiments</p>
               </Link>
               
+              <Link to="/blog" className="nav-card">
+                <div className="card-icon">📝</div>
+                <h3>Blog</h3>
+                <p>Read my thoughts & ideas</p>
+              </Link>
+              
               <Link to="/contact" className="nav-card">
                 <div className="card-icon">📬</div>
                 <h3>Contact</h3>
@@ -68,7 +74,7 @@ const Home = () => {
             </div>
 
             {/* Coming Soon Teasers */}
-            <div className="coming-soon">
+            {/* <div className="coming-soon">
               <h3 className="coming-soon-title">Coming Soon</h3>
               <div className="coming-soon-items">
                 <div className="coming-soon-item">
@@ -84,7 +90,7 @@ const Home = () => {
                   <span>Startup Ideas - Innovation Board</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
