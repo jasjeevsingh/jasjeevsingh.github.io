@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router basename='/jasjeevsingh.github.io/'>
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
