@@ -1,0 +1,375 @@
+.contact {
+  min-height: 100vh;
+  padding: 40px 0 80px;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-title {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3rem;
+  color: var(--chalk-white);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 20px var(--chalk-shadow);
+}
+
+.page-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--chalk-white);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 2.5rem;
+}
+
+.contact-form-section h2 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  color: var(--chalk-red);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--chalk-blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(248, 248, 242, 0.05);
+  border: 1px solid var(--chalk-shadow);
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: var(--chalk-white);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--chalk-blue);
+  background: rgba(102, 217, 239, 0.08);
+  box-shadow: 0 0 15px rgba(102, 217, 239, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(248, 248, 242, 0.5);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.submit-button {
+  background: var(--rosewood);
+  color: var(--chalk-white);
+  border: 2px solid var(--rosewood);
+  border-radius: 8px;
+  padding: 15px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background: transparent;
+  color: var(--rosewood);
+  box-shadow: 0 0 25px rgba(162, 60, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info {
+  padding: 2.5rem;
+}
+
+.contact-info h2 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  color: var(--chalk-blue);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.method-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-method h4 {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--chalk-red);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-method p {
+  color: var(--chalk-white);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.contact-method small {
+  color: var(--chalk-white);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Social Section */
+.social-section {
+  padding: 2rem;
+}
+
+.social-section h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.8rem;
+  color: var(--chalk-yellow);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(248, 248, 242, 0.1);
+  border-radius: 8px;
+  background: rgba(248, 248, 242, 0.02);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  border-color: var(--chalk-blue);
+  background: rgba(102, 217, 239, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 217, 239, 0.1);
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.social-info h4 {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--pale-coral);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.social-info p {
+  color: var(--chalk-white);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.faq-section h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  color: var(--chalk-yellow);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+  border: 1px solid rgba(248, 248, 242, 0.1);
+  border-radius: 8px;
+  background: rgba(248, 248, 242, 0.02);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--chalk-yellow);
+  background: rgba(230, 219, 116, 0.05);
+  transform: translateY(-2px);
+}
+
+.faq-item h4 {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--chalk-yellow);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  color: var(--chalk-white);
+  opacity: 0.9;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px 0 60px;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-description {
+    font-size: 1.1rem;
+  }
+
+  .contact-hero {
+    margin-bottom: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form-section,
+  .contact-info,
+  .social-section,
+  .faq-section {
+    padding: 2rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .contact-form-section,
+  .contact-info,
+  .social-section,
+  .faq-section {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .contact-method {
+    gap: 0.8rem;
+  }
+
+  .method-icon {
+    font-size: 1.5rem;
+  }
+
+  .social-link {
+    padding: 0.8rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .faq-item {
+    padding: 1.2rem;
+  }
+}
