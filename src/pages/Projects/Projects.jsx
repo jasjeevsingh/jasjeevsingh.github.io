@@ -10,51 +10,44 @@ const Projects = () => {
       title: "Personal Website",
       description: "A chalkboard-themed personal website built with React and Vite. Features dark mode aesthetics, responsive design, and smooth animations.",
       technologies: ["React", "Vite", "CSS3", "JavaScript"],
-      githubUrl: "https://github.com/jasjeevsingh/jasjeevsingh.github.io",
       liveUrl: "https://jasjeevsingh.github.io",
       status: "completed",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A full-stack task management application with real-time updates, user authentication, and collaborative features.",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-      githubUrl: "https://github.com/jasjeevsingh/task-manager",
+      title: "Kanosym",
+      description: "A quantum-classical copilot for financial reasoning, built to augment high-stakes decision-making with statistical rigor and computational depth.",
+      technologies: ["Python", "Qiskit", "PostgreSQL", "React", "TypeScript", "Next.js"],
       status: "in-progress"
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current conditions and forecasts using OpenWeatherMap API.",
-      technologies: ["Vue.js", "TypeScript", "TailwindCSS", "API Integration"],
-      githubUrl: "https://github.com/jasjeevsingh/weather-dashboard",
-      liveUrl: "https://weather-dashboard-demo.netlify.app",
-      status: "completed"
+      title: "Ramanujan",
+      description: "An interactive research and learning platform that helps curious minds build foundational knowledge and explore real-world research problems.",
+      technologies: ["React", "TypeScript", "Python", "PostgreSQL", "Next.js", "Tailwind CSS", "Supabase", "GPT-4 API"],
+      status: "in-progress"
     },
     {
       id: 4,
-      title: "Code Snippet Manager",
-      description: "A tool for developers to organize, search, and share code snippets with syntax highlighting and tagging system.",
-      technologies: ["Python", "Django", "PostgreSQL", "React"],
-      githubUrl: "https://github.com/jasjeevsingh/snippet-manager",
+      title: "Trial",
+      description: "A gamified short-form video platform where creators compete for permanence and viewers act as judges, deciding which videos survive or disappear.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
       status: "in-progress"
     },
     {
       id: 5,
-      title: "Data Visualization Tool",
-      description: "Interactive data visualization tool for analyzing and presenting complex datasets with customizable charts.",
-      technologies: ["D3.js", "JavaScript", "CSV Parser", "SVG"],
-      githubUrl: "https://github.com/jasjeevsingh/data-viz-tool",
-      status: "planning"
+      title: "RANI",
+      description: "An AI-powered research copilot designed to support researchers in learning, annotating, exploring, and experimenting with new ideas through real-time dialogue, paper analysis, and hands-on practice.",
+      technologies: ["Python", "TypeScript", "React", "Node.js", "LangChain", "PyMuPDF", "PostgreSQL", "WebRTC", "OpenAI API", "PDF.js", "Whisper", "Hugging Face Transformers"],
+      status: "in-progress"
     },
     {
       id: 6,
-      title: "Mobile Expense Tracker",
-      description: "A cross-platform mobile app for tracking personal expenses with budget management and spending analytics.",
-      technologies: ["React Native", "Expo", "SQLite", "Charts"],
-      githubUrl: "https://github.com/jasjeevsingh/expense-tracker",
-      status: "planning"
+      title: "Onli",
+      description: "A generative video platform where every piece of content is created in real time, entirely unique, and designed to exist 'only for you, only once.'",
+      technologies: ["Python", "TypeScript", "Next.js", "React", "PostgreSQL", "Replicate API", "Vercel"],
+      status: "in-progress"
     }
   ]
 
