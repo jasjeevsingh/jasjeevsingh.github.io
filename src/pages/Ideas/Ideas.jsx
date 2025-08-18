@@ -144,10 +144,9 @@ const Ideas = () => {
   return (
     <div className="ideas-container">
       <div className="ideas-header">
-        <h1 className="ideas-title">Idea Greenhouse</h1>
+        <h1 className="ideas-title">Shower Thoughts</h1>
         <p className="ideas-subtitle">
-          A collection of half-baked thoughts, future projects, and digital experiments. 
-          Some will bloom, others will compost into better ideas.
+            A collection of half-baked thoughts, future projects, and digital experiments. 
         </p>
       </div>
 

@@ -10,16 +10,17 @@ const Projects = () => {
       title: "Personal Website",
       description: "A chalkboard-themed personal website built with React and Vite. Features dark mode aesthetics, responsive design, and smooth animations.",
       technologies: ["React", "Vite", "CSS3", "JavaScript"],
-      liveUrl: "https://jasjeevsingh.github.io",
       status: "completed",
-      featured: true
+      featured: false
     },
     {
       id: 2,
       title: "Kanosym",
       description: "A quantum-classical copilot for financial reasoning, built to augment high-stakes decision-making with statistical rigor and computational depth.",
       technologies: ["Python", "Qiskit", "PostgreSQL", "React", "TypeScript", "Next.js"],
-      status: "in-progress"
+      liveUrl: "https://kanosym.com",
+      status: "in-progress",
+      featured: true
     },
     {
       id: 3,
@@ -30,24 +31,31 @@ const Projects = () => {
     },
     {
       id: 4,
+      title: "Extemplify",
+      description: "The only AI-powered tool for extemp prep that actually generates source-backed award-winning outlines. ",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
+      status: "in-progress"
+    },
+    {
+      id: 5,
       title: "Trial",
       description: "A gamified short-form video platform where creators compete for permanence and viewers act as judges, deciding which videos survive or disappear.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
       status: "in-progress"
     },
     {
-      id: 5,
+      id: 6,
       title: "RANI",
       description: "An AI-powered research copilot designed to support researchers in learning, annotating, exploring, and experimenting with new ideas through real-time dialogue, paper analysis, and hands-on practice.",
       technologies: ["Python", "TypeScript", "React", "Node.js", "LangChain", "PyMuPDF", "PostgreSQL", "WebRTC", "OpenAI API", "PDF.js", "Whisper", "Hugging Face Transformers"],
-      status: "in-progress"
+      status: "planning"
     },
     {
-      id: 6,
+      id: 7,
       title: "Onli",
       description: "A generative video platform where every piece of content is created in real time, entirely unique, and designed to exist 'only for you, only once.'",
       technologies: ["Python", "TypeScript", "Next.js", "React", "PostgreSQL", "Replicate API", "Vercel"],
-      status: "in-progress"
+      status: "planning"
     }
   ]
 
@@ -123,9 +131,9 @@ const Projects = () => {
             <h3 className="showcase-title">Technologies I Work With</h3>
             <div className="tech-cloud">
               {[
-                'React', 'Vue.js', 'JavaScript', 'TypeScript', 'Python', 
-                'Node.js', 'Django', 'MongoDB', 'PostgreSQL', 'Git',
-                'Docker', 'AWS', 'TailwindCSS', 'D3.js', 'Socket.io'
+                'React', 'TypeScript', 'Python', 
+                'Node.js', 'PostgreSQL', 'Git',
+                'TailwindCSS'
               ].map((tech, index) => (
                 <span key={index} className="tech-tag">
                   {tech}
