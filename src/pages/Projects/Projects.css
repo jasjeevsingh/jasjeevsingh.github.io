@@ -15,12 +15,12 @@
 }
 
 .page-title {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 3.5rem;
   color: var(--chalk-white);
   margin-bottom: 1.8rem;
   text-shadow: 3px 3px 6px var(--chalk-shadow);
-  transform: rotate(-1deg);
+  font-style: italic;
 }
 
 .page-description {
@@ -30,20 +30,20 @@
   opacity: 0.95;
   max-width: 650px;
   margin: 0 auto;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* Section Titles */
 .section-title {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 2.5rem;
   color: var(--chalk-red);
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
   text-shadow: 2px 2px 4px var(--chalk-shadow);
-  transform: rotate(0.5deg);
+  font-style: italic;
 }
 
 .section-title::after {
@@ -51,7 +51,7 @@
   position: absolute;
   bottom: -15px;
   left: 50%;
-  transform: translateX(-50%) rotate(-1deg);
+  transform: translateX(-50%);
   width: 100px;
   height: 3px;
   background: var(--chalk-red);
@@ -90,10 +90,11 @@
 }
 
 .coming-soon-section h3 {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 2rem;
   color: var(--chalk-blue);
   margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .coming-soon-section p {
@@ -103,6 +104,7 @@
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto 2.5rem;
+  font-family: 'Crimson Text', serif;
 }
 
 .coming-soon-buttons {
@@ -114,16 +116,16 @@
 
 .github-button,
 .contact-button {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   padding: 15px 30px;
   border: 3px solid;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
+  font-style: italic;
   transition: all 0.4s ease;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(-0.5deg);
 }
 
 .github-button {
@@ -136,7 +138,7 @@
   background: transparent;
   color: var(--chalk-red);
   box-shadow: 3px 3px 15px rgba(205, 92, 92, 0.4);
-  transform: rotate(0deg) translateY(-4px);
+  transform: translateY(-4px);
   text-shadow: 2px 2px 4px currentColor;
 }
 
@@ -144,14 +146,13 @@
   background: transparent;
   color: var(--chalk-blue);
   border-color: var(--chalk-blue);
-  transform: rotate(0.5deg);
 }
 
 .contact-button:hover {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
   box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.4);
-  transform: rotate(0deg) translateY(-4px);
+  transform: translateY(-4px);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -162,12 +163,12 @@
 }
 
 .showcase-title {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 2.3rem;
   color: var(--chalk-yellow);
   margin-bottom: 2.5rem;
   text-shadow: 2px 2px 4px var(--chalk-shadow);
-  transform: rotate(-0.5deg);
+  font-style: italic;
 }
 
 .tech-cloud {
@@ -184,18 +185,17 @@
   color: var(--chalk-yellow);
   padding: 10px 20px;
   border-radius: 25px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 1.05rem;
   border: 2px solid rgba(240, 230, 140, 0.4);
   transition: all 0.4s ease;
   cursor: default;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(1deg);
 }
 
 .tech-tag:hover {
   background: rgba(240, 230, 140, 0.2);
-  transform: rotate(0deg) translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 3px 3px 12px rgba(240, 230, 140, 0.3);
   border-color: rgba(240, 230, 140, 0.6);
 }

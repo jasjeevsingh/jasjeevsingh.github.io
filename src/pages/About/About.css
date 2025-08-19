@@ -100,13 +100,12 @@
   border-radius: 12px;
   background: rgba(245, 245, 220, 0.03);
   transition: all 0.4s ease;
-  transform: rotate(-0.5deg);
 }
 
 .philosophy-item:hover {
   border-color: var(--chalk-blue);
   background: rgba(135, 206, 235, 0.08);
-  transform: rotate(0deg) translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.2);
 }
 
@@ -114,16 +113,14 @@
   font-size: 2.3rem;
   flex-shrink: 0;
   margin-top: 0.3rem;
-  transform: rotate(5deg);
 }
 
 .philosophy-item h4 {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   color: var(--chalk-coral);
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(-1deg);
 }
 
 .philosophy-item p {
@@ -132,7 +129,7 @@
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.7;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
@@ -161,12 +158,11 @@
 }
 
 .skill-category {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 1.6rem;
   color: var(--chalk-coral);
   margin-bottom: 1.8rem;
   text-shadow: 2px 2px 4px var(--chalk-shadow);
-  transform: rotate(-0.5deg);
 }
 
 .skill-items {
@@ -181,17 +177,16 @@
   color: var(--chalk-red);
   padding: 10px 20px;
   border-radius: 25px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 1rem;
   border: 2px solid rgba(205, 92, 92, 0.4);
   transition: all 0.4s ease;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(1deg);
 }
 
 .skill-item:hover {
   background: rgba(205, 92, 92, 0.2);
-  transform: rotate(0deg) translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 3px 3px 12px rgba(205, 92, 92, 0.3);
   border-color: rgba(205, 92, 92, 0.6);
 }
@@ -222,13 +217,12 @@
   border-radius: 15px;
   background: rgba(245, 245, 220, 0.03);
   transition: all 0.4s ease;
-  transform: rotate(0.5deg);
 }
 
 .interest-item:hover {
   border-color: var(--chalk-yellow);
   background: rgba(240, 230, 140, 0.08);
-  transform: rotate(0deg) translateY(-5px);
+  transform: translateY(-5px);
   box-shadow: 3px 3px 15px rgba(240, 230, 140, 0.2);
 }
 
@@ -236,21 +230,19 @@
   font-size: 2.8rem;
   display: block;
   margin-bottom: 1.2rem;
-  transform: rotate(-10deg);
   transition: transform 0.4s ease;
 }
 
 .interest-item:hover .interest-icon {
-  transform: rotate(0deg);
+  transform: scale(1.1);
 }
 
 .interest-item h4 {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   color: var(--chalk-coral);
   margin-bottom: 1rem;
   font-size: 1.3rem;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(-1deg);
 }
 
 .interest-item p {
@@ -259,7 +251,7 @@
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.6;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
@@ -287,7 +279,7 @@
   opacity: 0.95;
   max-width: 650px;
   margin: 0 auto 3rem;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
@@ -299,30 +291,29 @@
 }
 
 .cta-button {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Crimson Text', serif;
   padding: 18px 35px;
   border: 3px solid;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
+  font-style: italic;
   transition: all 0.4s ease;
   text-shadow: 1px 1px 2px var(--chalk-shadow);
-  transform: rotate(-1deg);
 }
 
 .cta-button.primary {
   background: var(--chalk-red);
   color: var(--chalk-white);
   border-color: var(--chalk-red);
-  transform: rotate(-0.5deg);
 }
 
 .cta-button.primary:hover {
   background: transparent;
   color: var(--chalk-red);
   box-shadow: 3px 3px 15px rgba(205, 92, 92, 0.4);
-  transform: rotate(0deg) translateY(-4px);
+  transform: translateY(-4px);
   text-shadow: 2px 2px 4px currentColor;
 }
 
@@ -330,14 +321,13 @@
   background: transparent;
   color: var(--chalk-blue);
   border-color: var(--chalk-blue);
-  transform: rotate(0.5deg);
 }
 
 .cta-button.secondary:hover {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
   box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.4);
-  transform: rotate(0deg) translateY(-4px);
+  transform: translateY(-4px);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
