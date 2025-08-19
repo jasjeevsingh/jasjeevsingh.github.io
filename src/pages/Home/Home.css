@@ -30,42 +30,46 @@
 /* Hero Title */
 .hero-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
   color: var(--chalk-white);
-  text-shadow: 0 0 20px var(--chalk-shadow);
+  text-shadow: 3px 3px 6px var(--chalk-shadow);
   line-height: 1.2;
+  transform: rotate(-1deg);
 }
 
 .name-highlight {
-  color: var(--pale-coral);
+  color: var(--chalk-coral);
   font-weight: 600;
   position: relative;
+  transform: rotate(1deg);
+  display: inline-block;
 }
 
 .name-highlight::after {
   content: '';
   position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--pale-coral);
+  bottom: -8px;
+  left: -5px;
+  right: -5px;
+  height: 4px;
+  background: var(--chalk-coral);
   opacity: 0.6;
-  transform: scaleX(0);
+  transform: scaleX(0) rotate(-1deg);
   animation: underline 2s ease-out 1s forwards;
+  border-radius: 2px;
 }
 
 @keyframes underline {
   to {
-    transform: scaleX(1);
+    transform: scaleX(1) rotate(-1deg);
   }
 }
 
 /* Tagline */
 .tagline-container {
-  margin: 2rem 0 3rem;
-  min-height: 80px;
+  margin: 2.5rem 0 3.5rem;
+  min-height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,18 +77,19 @@
 
 .tagline {
   font-family: 'Patrick Hand', cursive;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: var(--chalk-blue);
   margin: 0;
   text-shadow:
-    0 0 2px rgba(102, 217, 239, 0.2),
-    1px 1px 0 rgba(255, 255, 255, 0.03);
+    2px 2px 4px rgba(135, 206, 235, 0.3),
+    1px 1px 0 rgba(255, 255, 255, 0.05);
+  transform: rotate(0.5deg);
 }
 
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 3px solid var(--chalk-blue);
+  border-right: 4px solid var(--chalk-blue);
   white-space: nowrap;
   animation:
     typewriter 4s steps(35) 0.5s forwards,
@@ -93,7 +98,9 @@
 }
 
 .accent-word {
-  color: var(--warm-brick);
+  color: var(--chalk-orange);
+  transform: rotate(-0.5deg);
+  display: inline-block;
 }
 
 /* Chalk 'scribble' effect on appearance */
@@ -114,14 +121,17 @@
 
 /* Hero Description */
 .hero-description {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin: 2rem 0 3rem;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  margin: 2.5rem 0 3.5rem;
   color: var(--chalk-white);
-  opacity: 0.9;
-  max-width: 600px;
+  opacity: 0.95;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 1px 1px 3px var(--chalk-shadow);
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 400;
 }
 
 /* CTA Buttons */
@@ -134,78 +144,87 @@
 }
 
 .cta-button {
-  font-family: 'JetBrains Mono', monospace;
-  padding: 15px 30px;
-  border: 2px solid;
-  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  padding: 18px 35px;
+  border: 3px solid;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .cta-button.primary {
-  background: var(--rosewood);
+  background: var(--chalk-red);
   color: var(--chalk-white);
-  border-color: var(--rosewood);
+  border-color: var(--chalk-red);
+  transform: rotate(-0.5deg);
 }
 
 .cta-button.primary:hover {
   background: transparent;
-  color: var(--rosewood);
-  box-shadow: 0 0 25px rgba(162, 60, 60, 0.3);
-  transform: translateY(-3px);
+  color: var(--chalk-red);
+  box-shadow: 3px 3px 15px rgba(205, 92, 92, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .cta-button.secondary {
   background: transparent;
   color: var(--chalk-blue);
   border-color: var(--chalk-blue);
+  transform: rotate(0.5deg);
 }
 
 .cta-button.secondary:hover {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
-  box-shadow: 0 0 25px rgba(102, 217, 239, 0.3);
-  transform: translateY(-3px);
+  box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Quick Navigation Cards */
 .quick-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 4rem 0;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
+  margin: 4.5rem 0;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .nav-card {
-  background: rgba(248, 248, 242, 0.03);
-  border: 1px solid var(--chalk-shadow);
-  border-radius: 12px;
-  padding: 2rem;
+  background: rgba(245, 245, 220, 0.04);
+  border: 3px solid var(--chalk-shadow);
+  border-radius: 15px;
+  padding: 2.5rem;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   text-align: center;
   position: relative;
   overflow: hidden;
+  transform: rotate(-1deg);
 }
 
 .nav-card::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -10px;
   left: -100%;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background: linear-gradient(90deg, 
     transparent, 
-    rgba(248, 248, 242, 0.05), 
+    rgba(245, 245, 220, 0.08), 
     transparent);
-  transition: left 0.5s ease;
+  transition: left 0.6s ease;
+  transform: rotate(15deg);
 }
 
 .nav-card:hover::before {
@@ -213,70 +232,86 @@
 }
 
 .nav-card:hover {
-  transform: translateY(-8px);
+  transform: rotate(0deg) translateY(-10px);
   border-color: var(--chalk-blue);
-  box-shadow: 0 10px 30px rgba(102, 217, 239, 0.2);
+  box-shadow: 5px 5px 20px rgba(135, 206, 235, 0.3);
 }
 
 .card-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  filter: grayscale(1);
-  transition: filter 0.3s ease;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  filter: grayscale(0.7) opacity(0.8);
+  transition: filter 0.4s ease;
+  transform: rotate(5deg);
 }
 
 .nav-card:hover .card-icon {
-  filter: grayscale(0);
+  filter: grayscale(0) opacity(1);
+  transform: rotate(0deg);
 }
 
 .nav-card h3 {
   color: var(--chalk-red);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  transform: rotate(0.5deg);
 }
 
 .nav-card p {
   color: var(--chalk-white);
-  opacity: 0.8;
+  opacity: 0.85;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Patrick Hand', cursive;
 }
 
 /* Coming Soon Section */
 .coming-soon {
-  margin: 4rem 0 2rem;
+  margin: 4.5rem 0 2.5rem;
   text-align: center;
 }
 
 .coming-soon-title {
   color: var(--chalk-yellow);
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  transform: rotate(-0.5deg);
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
 }
 
 .coming-soon-items {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 
 .coming-soon-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 12px 20px;
-  border: 1px dashed var(--chalk-yellow);
-  border-radius: 8px;
-  background: rgba(230, 219, 116, 0.05);
+  gap: 0.8rem;
+  padding: 15px 25px;
+  border: 2px dashed var(--chalk-yellow);
+  border-radius: 12px;
+  background: rgba(240, 230, 140, 0.08);
   color: var(--chalk-yellow);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.05rem;
+  opacity: 0.85;
+  transform: rotate(1deg);
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transition: all 0.3s ease;
+}
+
+.coming-soon-item:hover {
+  transform: rotate(0deg) translateY(-2px);
+  opacity: 1;
+  background: rgba(240, 230, 140, 0.12);
 }
 
 .item-icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* Decorative Chalk Dust */

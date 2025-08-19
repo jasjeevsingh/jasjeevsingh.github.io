@@ -1,28 +1,30 @@
 .project-card {
-  background: rgba(248, 248, 242, 0.03);
-  border: 1px solid var(--chalk-shadow);
-  border-radius: 12px;
-  padding: 2rem;
+  background: rgba(245, 245, 220, 0.04);
+  border: 3px solid var(--chalk-shadow);
+  border-radius: 15px;
+  padding: 2.5rem;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
+  transform: rotate(-0.5deg);
 }
 
 .project-card::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -10px;
   left: -100%;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background: linear-gradient(90deg, 
     transparent, 
-    rgba(248, 248, 242, 0.05), 
+    rgba(245, 245, 220, 0.08), 
     transparent);
-  transition: left 0.5s ease;
+  transition: left 0.6s ease;
+  transform: rotate(15deg);
 }
 
 .project-card:hover::before {
@@ -30,38 +32,41 @@
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
+  transform: rotate(0deg) translateY(-10px);
   border-color: var(--chalk-blue);
-  box-shadow: 0 15px 40px rgba(102, 217, 239, 0.2);
+  box-shadow: 5px 5px 25px rgba(135, 206, 235, 0.3);
 }
 
 .project-card.featured {
   border-color: var(--chalk-red);
-  background: rgba(215, 95, 95, 0.05);
+  background: rgba(205, 92, 92, 0.06);
+  transform: rotate(0.5deg);
 }
 
 .project-card.featured:hover {
   border-color: var(--chalk-red);
-  box-shadow: 0 15px 40px rgba(215, 95, 95, 0.25);
+  box-shadow: 5px 5px 25px rgba(205, 92, 92, 0.35);
 }
 
 /* Status Badge */
 .status-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.2rem;
+  right: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  gap: 0.6rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 0.9rem;
   font-weight: 500;
   z-index: 2;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(2deg);
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
@@ -78,16 +83,19 @@
 /* Featured Badge */
 .featured-badge {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 1.2rem;
+  left: 1.2rem;
   background: var(--chalk-red);
   color: var(--chalk-white);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 0.8rem;
   font-weight: 500;
   z-index: 2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transform: rotate(-3deg);
+  border: 2px solid var(--chalk-white);
 }
 
 /* Project Content */
@@ -100,10 +108,12 @@
 
 .project-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--chalk-white);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   line-height: 1.3;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(-0.5deg);
 }
 
 .project-card.featured .project-title {
@@ -112,11 +122,13 @@
 
 .project-description {
   color: var(--chalk-white);
-  opacity: 0.9;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
   flex: 1;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* Technologies */
@@ -128,29 +140,33 @@
 }
 
 .tech-tag {
-  background: rgba(102, 217, 239, 0.1);
+  background: rgba(135, 206, 235, 0.12);
   color: var(--chalk-blue);
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  border: 1px solid rgba(102, 217, 239, 0.3);
-  transition: all 0.3s ease;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 0.85rem;
+  border: 2px solid rgba(135, 206, 235, 0.4);
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(1deg);
 }
 
 .tech-tag:hover {
-  background: rgba(102, 217, 239, 0.2);
-  transform: translateY(-1px);
+  background: rgba(135, 206, 235, 0.2);
+  transform: rotate(0deg) translateY(-2px);
+  border-color: rgba(135, 206, 235, 0.6);
 }
 
 .project-card.featured .tech-tag {
-  background: rgba(215, 95, 95, 0.1);
+  background: rgba(205, 92, 92, 0.12);
   color: var(--chalk-red);
-  border-color: rgba(215, 95, 95, 0.3);
+  border-color: rgba(205, 92, 92, 0.4);
 }
 
 .project-card.featured .tech-tag:hover {
-  background: rgba(215, 95, 95, 0.2);
+  background: rgba(205, 92, 92, 0.2);
+  border-color: rgba(205, 92, 92, 0.6);
 }
 
 /* Project Links */
@@ -163,21 +179,23 @@
 .project-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 10px 16px;
-  border: 1px solid;
-  border-radius: 6px;
+  gap: 0.6rem;
+  padding: 12px 20px;
+  border: 2px solid;
+  border-radius: 10px;
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 0.95rem;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   flex: 1;
   justify-content: center;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-0.5deg);
 }
 
 .link-icon {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .github-link {
@@ -189,21 +207,24 @@
 .github-link:hover {
   background: var(--chalk-white);
   color: var(--chalkboard-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(248, 248, 242, 0.2);
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 3px 12px rgba(245, 245, 220, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .live-link {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
   border-color: var(--chalk-blue);
+  transform: rotate(0.5deg);
 }
 
 .live-link:hover {
   background: transparent;
   color: var(--chalk-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 217, 239, 0.3);
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 3px 12px rgba(135, 206, 235, 0.4);
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* Card Decoration */

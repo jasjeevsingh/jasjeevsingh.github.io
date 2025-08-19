@@ -1,19 +1,21 @@
-/* Global Chalkboard Theme Styles */
+/* Academic Chalkboard Theme Styles */
 :root {
-  --chalk-white: #f8f8f2;
-  --chalk-red: #D75F5F;
-  --warm-brick: #B55A4A;
-  --rosewood: #A23C3C;
-  --pale-coral: #FF6E6E;
-  --chalk-blue: #66d9ef;
-  --chalk-gray: #6e7681;
-  --chalk-purple: #ae81ff;
-  --chalk-yellow: #e6db74;
-  --chalk-orange: #fd971f;
+  --chalk-white: #f5f5dc;
+  --chalk-cream: #faf7f0;
+  --chalk-red: #cd5c5c;
+  --chalk-coral: #ff7f7f;
+  --chalk-blue: #87ceeb;
+  --chalk-green: #98fb98;
+  --chalk-yellow: #f0e68c;
+  --chalk-orange: #ffa07a;
+  --chalk-purple: #dda0dd;
+  --chalk-gray: #d3d3d3;
   --chalkboard-dark: #1a1a1a;
   --chalkboard-darker: #0f0f0f;
-  --chalk-shadow: rgba(248, 248, 242, 0.1);
-  --chalk-glow: rgba(248, 248, 242, 0.05);
+  --chalkboard-black: #141414;
+  --chalk-shadow: rgba(245, 245, 220, 0.2);
+  --chalk-glow: rgba(245, 245, 220, 0.1);
+  --eraser-mark: rgba(245, 245, 220, 0.05);
 }
 
 * {
@@ -23,46 +25,57 @@
 }
 
 body {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-family: 'Patrick Hand', 'Schoolbell', cursive;
   line-height: 1.6;
   color: var(--chalk-white);
   background-color: var(--chalkboard-dark);
   background-image: 
-    radial-gradient(circle at 25% 25%, var(--chalk-glow) 1px, transparent 1px),
-    radial-gradient(circle at 75% 75%, var(--chalk-glow) 1px, transparent 1px);
-  background-size: 50px 50px;
+    radial-gradient(circle at 20% 30%, var(--chalk-glow) 2px, transparent 2px),
+    radial-gradient(circle at 80% 70%, var(--chalk-glow) 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, var(--eraser-mark) 3px, transparent 3px),
+    linear-gradient(45deg, transparent 49%, var(--eraser-mark) 50%, transparent 51%);
+  background-size: 80px 80px, 60px 60px, 120px 120px, 200px 200px;
   min-height: 100vh;
   overflow-x: hidden;
+  font-size: 1.1rem;
 }
 
 /* Typography */
 h1, h2, h3 {
   font-family: 'Patrick Hand', 'Schoolbell', cursive;
   font-weight: 400;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px var(--chalk-shadow);
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(-1deg);
+  margin-left: 10px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  transform: rotate(-0.5deg);
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
   color: var(--chalk-red);
+  transform: rotate(0.5deg);
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
   color: var(--chalk-blue);
+  transform: rotate(-0.3deg);
 }
 
 p {
-  margin-bottom: 1rem;
-  font-weight: 300;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  line-height: 1.7;
 }
 
 a {
@@ -70,26 +83,32 @@ a {
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 500;
 }
 
 a:hover {
-  color: var(--chalk-red);
-  text-shadow: 0 0 8px currentColor;
+  color: var(--chalk-coral);
+  text-shadow: 2px 2px 6px currentColor;
+  transform: rotate(1deg);
 }
 
 a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
+  bottom: -3px;
+  left: -2px;
+  right: -2px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 1px;
+  transform: rotate(-1deg);
 }
 
 a:hover::after {
-  width: 100%;
+  opacity: 0.7;
 }
 
 /* Layout */
@@ -116,24 +135,40 @@ a:hover::after {
 /* Chalk effects */
 .chalk-effect {
   position: relative;
-  padding: 20px;
-  border: 2px solid var(--chalk-white);
-  border-radius: 8px;
+  padding: 25px;
+  border: 3px solid var(--chalk-white);
+  border-radius: 15px;
   background: linear-gradient(135deg, 
-    rgba(248, 248, 242, 0.02) 0%, 
-    rgba(248, 248, 242, 0.01) 100%);
+    rgba(245, 245, 220, 0.03) 0%, 
+    rgba(245, 245, 220, 0.01) 100%);
   box-shadow: 
-    0 0 20px var(--chalk-shadow),
-    inset 0 0 20px rgba(248, 248, 242, 0.02);
-  margin: 20px 0;
-  transition: all 0.3s ease;
+    3px 3px 8px var(--chalk-shadow),
+    inset 2px 2px 10px rgba(245, 245, 220, 0.03);
+  margin: 25px 0;
+  transition: all 0.4s ease;
+  transform: rotate(-0.5deg);
 }
 
 .chalk-effect:hover {
   box-shadow: 
-    0 0 30px var(--chalk-shadow),
-    inset 0 0 30px rgba(248, 248, 242, 0.04);
-  transform: translateY(-2px);
+    5px 5px 15px var(--chalk-shadow),
+    inset 3px 3px 15px rgba(245, 245, 220, 0.05);
+  transform: rotate(0deg) translateY(-3px);
+  border-color: var(--chalk-blue);
+}
+
+.chalk-effect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, 
+    transparent 48%, var(--eraser-mark) 50%, transparent 52%);
+  border-radius: 18px;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 /* Responsive Design */

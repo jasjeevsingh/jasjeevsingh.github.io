@@ -16,22 +16,25 @@
 
 .page-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--chalk-white);
-  margin-bottom: 1rem;
-  text-shadow: 0 0 20px var(--chalk-shadow);
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 6px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .subtitle-container {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .subtitle {
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--chalk-blue);
   margin: 0;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(0.5deg);
 }
 
 /* Main Grid Layout */
@@ -56,11 +59,13 @@
 }
 
 .story-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
   color: var(--chalk-white);
   opacity: 0.95;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 .story-content p:last-child {
@@ -89,39 +94,46 @@
 .philosophy-item {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem;
-  border: 1px solid rgba(248, 248, 242, 0.1);
-  border-radius: 8px;
-  background: rgba(248, 248, 242, 0.02);
-  transition: all 0.3s ease;
+  gap: 1.2rem;
+  padding: 2rem;
+  border: 3px solid rgba(245, 245, 220, 0.15);
+  border-radius: 12px;
+  background: rgba(245, 245, 220, 0.03);
+  transition: all 0.4s ease;
+  transform: rotate(-0.5deg);
 }
 
 .philosophy-item:hover {
   border-color: var(--chalk-blue);
-  background: rgba(102, 217, 239, 0.05);
-  transform: translateY(-2px);
+  background: rgba(135, 206, 235, 0.08);
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.2);
 }
 
 .philosophy-icon {
-  font-size: 2rem;
+  font-size: 2.3rem;
   flex-shrink: 0;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
+  transform: rotate(5deg);
 }
 
 .philosophy-item h4 {
-  font-family: 'JetBrains Mono', monospace;
-  color: var(--pale-coral);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-family: 'Patrick Hand', cursive;
+  color: var(--chalk-coral);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .philosophy-item p {
   color: var(--chalk-white);
-  opacity: 0.9;
+  opacity: 0.95;
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* Skills Section */
@@ -150,33 +162,38 @@
 
 .skill-category {
   font-family: 'Patrick Hand', cursive;
-  font-size: 1.4rem;
-  color: var(--pale-coral);
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--chalk-coral);
+  margin-bottom: 1.8rem;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(-0.5deg);
 }
 
 .skill-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
   justify-content: center;
 }
 
 .skill-item {
-  background: rgba(215, 95, 95, 0.1);
+  background: rgba(205, 92, 92, 0.12);
   color: var(--chalk-red);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.9rem;
-  border: 1px solid rgba(215, 95, 95, 0.3);
-  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+  border: 2px solid rgba(205, 92, 92, 0.4);
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(1deg);
 }
 
 .skill-item:hover {
-  background: rgba(215, 95, 95, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(215, 95, 95, 0.2);
+  background: rgba(205, 92, 92, 0.2);
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 3px 12px rgba(205, 92, 92, 0.3);
+  border-color: rgba(205, 92, 92, 0.6);
 }
 
 /* Interests Section */
@@ -200,38 +217,50 @@
 
 .interest-item {
   text-align: center;
-  padding: 1.5rem;
-  border: 1px solid rgba(248, 248, 242, 0.1);
-  border-radius: 12px;
-  background: rgba(248, 248, 242, 0.02);
-  transition: all 0.3s ease;
+  padding: 2rem;
+  border: 3px solid rgba(245, 245, 220, 0.15);
+  border-radius: 15px;
+  background: rgba(245, 245, 220, 0.03);
+  transition: all 0.4s ease;
+  transform: rotate(0.5deg);
 }
 
 .interest-item:hover {
   border-color: var(--chalk-yellow);
-  background: rgba(230, 219, 116, 0.05);
-  transform: translateY(-3px);
+  background: rgba(240, 230, 140, 0.08);
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 3px 3px 15px rgba(240, 230, 140, 0.2);
 }
 
 .interest-icon {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  transform: rotate(-10deg);
+  transition: transform 0.4s ease;
+}
+
+.interest-item:hover .interest-icon {
+  transform: rotate(0deg);
 }
 
 .interest-item h4 {
-  font-family: 'JetBrains Mono', monospace;
-  color: var(--pale-coral);
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
+  font-family: 'Patrick Hand', cursive;
+  color: var(--chalk-coral);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .interest-item p {
   color: var(--chalk-white);
-  opacity: 0.9;
+  opacity: 0.95;
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* CTA Section */
@@ -252,55 +281,64 @@
 }
 
 .cta-content p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.8;
   color: var(--chalk-white);
   opacity: 0.95;
-  max-width: 600px;
-  margin: 0 auto 2.5rem;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 .cta-buttons {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .cta-button {
-  font-family: 'JetBrains Mono', monospace;
-  padding: 15px 30px;
-  border: 2px solid;
-  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  padding: 18px 35px;
+  border: 3px solid;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .cta-button.primary {
-  background: var(--rosewood);
+  background: var(--chalk-red);
   color: var(--chalk-white);
-  border-color: var(--rosewood);
+  border-color: var(--chalk-red);
+  transform: rotate(-0.5deg);
 }
 
 .cta-button.primary:hover {
   background: transparent;
-  color: var(--rosewood);
-  box-shadow: 0 0 25px rgba(162, 60, 60, 0.3);
-  transform: translateY(-3px);
+  color: var(--chalk-red);
+  box-shadow: 3px 3px 15px rgba(205, 92, 92, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .cta-button.secondary {
   background: transparent;
   color: var(--chalk-blue);
   border-color: var(--chalk-blue);
+  transform: rotate(0.5deg);
 }
 
 .cta-button.secondary:hover {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
-  box-shadow: 0 0 25px rgba(102, 217, 239, 0.3);
-  transform: translateY(-3px);
+  box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Design */

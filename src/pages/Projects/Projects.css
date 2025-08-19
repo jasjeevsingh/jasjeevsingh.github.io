@@ -16,41 +16,47 @@
 
 .page-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--chalk-white);
-  margin-bottom: 1.5rem;
-  text-shadow: 0 0 20px var(--chalk-shadow);
+  margin-bottom: 1.8rem;
+  text-shadow: 3px 3px 6px var(--chalk-shadow);
+  transform: rotate(-1deg);
 }
 
 .page-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.7;
   color: var(--chalk-white);
-  opacity: 0.9;
-  max-width: 600px;
+  opacity: 0.95;
+  max-width: 650px;
   margin: 0 auto;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
 }
 
 /* Section Titles */
 .section-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: var(--chalk-red);
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   position: relative;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(0.5deg);
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 2px;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 100px;
+  height: 3px;
   background: var(--chalk-red);
-  opacity: 0.6;
+  opacity: 0.7;
+  border-radius: 2px;
 }
 
 /* Featured Section */
@@ -108,39 +114,45 @@
 
 .github-button,
 .contact-button {
-  font-family: 'JetBrains Mono', monospace;
-  padding: 12px 24px;
-  border: 2px solid;
-  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  padding: 15px 30px;
+  border: 3px solid;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(-0.5deg);
 }
 
 .github-button {
-  background: var(--rosewood);
+  background: var(--chalk-red);
   color: var(--chalk-white);
-  border-color: var(--rosewood);
+  border-color: var(--chalk-red);
 }
 
 .github-button:hover {
   background: transparent;
-  color: var(--rosewood);
-  box-shadow: 0 0 25px rgba(162, 60, 60, 0.3);
-  transform: translateY(-3px);
+  color: var(--chalk-red);
+  box-shadow: 3px 3px 15px rgba(205, 92, 92, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .contact-button {
   background: transparent;
   color: var(--chalk-blue);
   border-color: var(--chalk-blue);
+  transform: rotate(0.5deg);
 }
 
 .contact-button:hover {
   background: var(--chalk-blue);
   color: var(--chalkboard-dark);
-  box-shadow: 0 0 25px rgba(102, 217, 239, 0.3);
-  transform: translateY(-3px);
+  box-shadow: 3px 3px 15px rgba(135, 206, 235, 0.4);
+  transform: rotate(0deg) translateY(-4px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Skills Showcase */
@@ -151,36 +163,41 @@
 
 .showcase-title {
   font-family: 'Patrick Hand', cursive;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: var(--chalk-yellow);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 2px 4px var(--chalk-shadow);
+  transform: rotate(-0.5deg);
 }
 
 .tech-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 .tech-tag {
-  background: rgba(230, 219, 116, 0.1);
+  background: rgba(240, 230, 140, 0.12);
   color: var(--chalk-yellow);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.9rem;
-  border: 1px solid rgba(230, 219, 116, 0.3);
-  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.05rem;
+  border: 2px solid rgba(240, 230, 140, 0.4);
+  transition: all 0.4s ease;
   cursor: default;
+  text-shadow: 1px 1px 2px var(--chalk-shadow);
+  transform: rotate(1deg);
 }
 
 .tech-tag:hover {
-  background: rgba(230, 219, 116, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(230, 219, 116, 0.2);
+  background: rgba(240, 230, 140, 0.2);
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 3px 12px rgba(240, 230, 140, 0.3);
+  border-color: rgba(240, 230, 140, 0.6);
 }
 
 /* Responsive Design */
